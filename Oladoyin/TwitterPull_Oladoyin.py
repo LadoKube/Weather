@@ -11,8 +11,7 @@ cursor = cnx.cursor()
 tweets = []
 
 # No. of days for which we want the code to run
-days = 'insert the number of days you want the code to run'
-days = 1
+days = 3
 
 class MyStreamer(TwythonStreamer):  #
     def on_success(self, data):
@@ -37,21 +36,25 @@ class MyStreamer(TwythonStreamer):  #
         print status_code, data
         self.disconnect()
 
-TwitterAPIKey = ''
+CONSUMER_KEY = "UaWtMjBrtGzygur5GHXVCIwgD"
+CONSUMER_SECRET = "dpxr3PHeUuS1vzjkqJOBPJVAsSB04wKoiPQWthRqpL5dMvj6al"
+ACCESS_TOKEN = "775364487616532480-3QYNxAWchZe9O8cBpOoP0andqYE7oYY"
+ACCESS_TOKEN_SECRET = "6eELawMZ1tnYhR7hNZ9NKxzC2qLV3ib8L0AukBEwqf8Jw"
 
 # Start grabbing tweets
 def tweetsperday():
-    stream = MyStreamer(TwitterAPIKey, 
-                        AccessToken,
-                        AccessTokenSecret)
+    stream = MyStreamer(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
     # In the track filer, comma separation = OR, space separation = AND
     # Cannot filer by location also..
-    stream.statuses.filter(track=['weather London, London rain, London storm, Soho weather, Soho storm, camden weather, camden rain, camden storm'])
+    stream.statuses.filter(track=['Islington weather, Kensington weather, Chelsea weather, Kingston weather, '
+                                  'Lambeth weather, Lewisham weather, Merton weather, Newham weather, Redbridge weather,'
+                                  'Richmond weather, Southwark weather, Sutton weather, '
+                                  'Wandsworth weather'])
 
 # Send the tweets to SQL
 def Commit(tweets):
     for t in tweets:
-        cursor.execute("insert into dbo.Tweets (Tweet) values (?)", json.dumps(t))
+        cursor.execute("insert into dbo.Tweeps (Tweet) values (?)", json.dumps(t))
         cnx.commit()
 
 
