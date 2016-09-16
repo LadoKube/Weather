@@ -41,14 +41,17 @@ TwitterSecretKey = ''
 AccessToken = ''
 AccessTokenSecret = ''
 
+filterWords = ['']
+
 # Start grabbing tweets
 def tweetsperday():
-    stream = MyStreamer('TwitterAPIKey', 'TwitterSecretKey',
-                        'AccessToken',
-                        'AccessTokenSecret')
+    stream = MyStreamer(TwitterAPIKey, 
+						TwitterSecretKey,
+                        AccessToken,
+                        AccessTokenSecret)
     # In the track filer, comma separation = OR, space separation = AND
     # Cannot filer by location also..
-    stream.statuses.filter(track=['weather London, London rain, London storm, Soho weather, Soho storm, camden weather, camden rain, camden storm'])
+    stream.statuses.filter(track=[filterWords])
 
 # Send the tweets to SQL
 def Commit(tweets):
