@@ -32,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwitterPull.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TwitterPull.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../WeatherProject/TwitterPull.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-793">
@@ -40,16 +40,6 @@
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TwitterPull_Oladoyin.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../WeatherProject/TwitterPull_Oladoyin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -381,13 +371,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../WeatherProject/TwitterPull.py">
+    <entry file="file://$PROJECT_DIR$/../WeatherProject/TwitterPull_BACKUP_14032.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-793">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -396,6 +384,16 @@
         <state relative-caret-position="391">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WeatherProject/TwitterPull.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-793">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
