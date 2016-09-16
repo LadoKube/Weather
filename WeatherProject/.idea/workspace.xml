@@ -93,7 +93,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/WeatherProjectGit" />
   </component>
   <component name="RunManager" selected="Python.metOfficeDownLoad">
     <configuration default="false" name="TwitterPull" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -359,11 +359,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ImportSqlIntoJson.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="119">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>

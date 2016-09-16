@@ -36,11 +36,16 @@ class MyStreamer(TwythonStreamer):  #
         print status_code, data
         self.disconnect()
 
+TwitterAPIkey =
+TwitterSecretKey =
+AccessToken =
+AccessTokenSecret =
+
 # Start grabbing tweets
 def tweetsperday():
-    stream = MyStreamer('Twitter API key', 'twitter Secret Key',
-                        'Access Token',
-                        'Access Token Secret')
+    stream = MyStreamer('TwitterAPIkey', 'TwitterSecretKey',
+                        'AccessToken',
+                        'AccessTokenSecret')
     # In the track filer, comma separation = OR, space separation = AND
     # Cannot filer by location also..
     stream.statuses.filter(track=['weather London, London rain, London storm, Soho weather, Soho storm, camden weather, camden rain, camden storm'])
