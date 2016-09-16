@@ -36,14 +36,14 @@ class MyStreamer(TwythonStreamer):  #
         print status_code, data
         self.disconnect()
 
-TwitterAPIkey =
-TwitterSecretKey =
-AccessToken =
-AccessTokenSecret =
+TwitterAPIKey = ''
+TwitterSecretKey = ''
+AccessToken = ''
+AccessTokenSecret = ''
 
 # Start grabbing tweets
 def tweetsperday():
-    stream = MyStreamer('TwitterAPIkey', 'TwitterSecretKey',
+    stream = MyStreamer('TwitterAPIKey', 'TwitterSecretKey',
                         'AccessToken',
                         'AccessTokenSecret')
     # In the track filer, comma separation = OR, space separation = AND
