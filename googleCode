@@ -1,8 +1,0 @@
-if (position_tracker_row == 0 & position_tracker_col == 0)
-                {
-                    counter += Math.abs(target/corner00[j]);
-                    target = target - (target/corner00[j])*corner00[j];
-                    src = src + (target/corner00[j])*corner00[j];
-                    position_tracker_row = (src%8) + 8;
-                    position_tracker_col = src% 8;
-                }
