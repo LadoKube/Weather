@@ -28,8 +28,8 @@ class MyStreamer(TwythonStreamer):  #
             print 'done'
             self.disconnect()
 
-        # If we grab a tweet after 10 PM STOP
-        if NOW >= 22:
+        # If we grab a tweet after 11 PM STOP
+        if NOW >= 23:
             self.disconnect()
 
     def on_error(self, status_code, data):
@@ -38,9 +38,9 @@ class MyStreamer(TwythonStreamer):  #
 
 # Start grabbing tweets
 def tweetsperday():
-    stream = MyStreamer('FAqW6wgcfeArXO39OJMMkcYaZ', 'zxuukcmr1ODldJp8oxoE9pwI7EyPueJG5iY1UWlv2GQxlnYO7r',
-                        '775365187071344640-PnqL0piEKWzFDczbg0Vc738cdqt8iut',
-                        'AT8unIhmtwil0kCi4veBtzwMywWDx6w9WY56fasySkugd')
+    stream = MyStreamer('Twitter API key', 'twitter Secret Key',
+                        'Access Token',
+                        'Access Token Secret')
     # In the track filer, comma separation = OR, space separation = AND
     # Cannot filer by location also..
     stream.statuses.filter(track=['weather London, London rain, London storm, Soho weather, Soho storm, camden weather, camden rain, camden storm'])
