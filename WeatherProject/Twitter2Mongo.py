@@ -26,7 +26,7 @@ class MyStreamer(TwythonStreamer):
             print 'tweet #' + str(len(tweets))
 
         # Limit of grabbing tweets is 2400, best to be safe?
-        if len(tweets) >= 2:
+        if len(tweets) >= 750:
             print 'done'
             self.disconnect()
 
