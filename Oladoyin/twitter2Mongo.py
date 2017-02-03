@@ -38,10 +38,10 @@ class MyStreamer(TwythonStreamer):  #
         print status_code, data
         self.disconnect()
 
-CONSUMER_KEY = "UaWtMjBrtGzygur5GHXVCIwgD"
-CONSUMER_SECRET = "dpxr3PHeUuS1vzjkqJOBPJVAsSB04wKoiPQWthRqpL5dMvj6al"
-ACCESS_TOKEN = "775364487616532480-3QYNxAWchZe9O8cBpOoP0andqYE7oYY"
-ACCESS_TOKEN_SECRET = "6eELawMZ1tnYhR7hNZ9NKxzC2qLV3ib8L0AukBEwqf8Jw"
+CONSUMER_KEY = 
+CONSUMER_SECRET = 
+ACCESS_TOKEN = 
+ACCESS_TOKEN_SECRET = 
 
 # Start grabbing tweets
 def tweetsperday():
